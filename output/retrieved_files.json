@@ -1,0 +1,59 @@
+{
+  "issue": "OR operator produces invalid tag names in validation errors",
+  "keywords": [
+    "operator",
+    "produces",
+    "names",
+    "validation",
+    "errors"
+  ],
+  "candidates": [
+    {
+      "file_path": "D:\\agentic_go_fixer\\validator\\validator_test.go",
+      "file_name": "validator_test.go",
+      "is_test_file": true,
+      "total_score": 195.9,
+      "filename_score": 0.0,
+      "symbol_score": 191.0,
+      "text_score": 4.9
+    },
+    {
+      "file_path": "D:\\agentic_go_fixer\\validator\\validator_instance.go",
+      "file_name": "validator_instance.go",
+      "is_test_file": false,
+      "total_score": 12.8,
+      "filename_score": 0.0,
+      "symbol_score": 7.0,
+      "text_score": 5.8
+    },
+    {
+      "file_path": "D:\\agentic_go_fixer\\validator\\errors.go",
+      "file_name": "errors.go",
+      "is_test_file": false,
+      "total_score": 6.4,
+      "filename_score": 2.0,
+      "symbol_score": 3.0,
+      "text_score": 1.4
+    },
+    {
+      "file_path": "D:\\agentic_go_fixer\\validator\\benchmarks_test.go",
+      "file_name": "benchmarks_test.go",
+      "is_test_file": true,
+      "total_score": 4.2,
+      "filename_score": 0.0,
+      "symbol_score": 4.0,
+      "text_score": 0.2
+    },
+    {
+      "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\struct-level\\main.go",
+      "file_name": "main.go",
+      "is_test_file": false,
+      "total_score": 3.6,
+      "filename_score": 0.0,
+      "symbol_score": 2.0,
+      "text_score": 1.6
+    }
+  ],
+  "selected_file": "D:\\agentic_go_fixer\\validator\\validator_instance.go",
+  "selection_reasoning": "The issue describes a problem with how validation tags, specifically involving the OR operator, are processed and result in malformed error messages, pointing to the core validation logic likely found in `validator_instance.go` rather than a test file."
+}

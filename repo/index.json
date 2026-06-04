@@ -1,0 +1,1681 @@
+[
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\baked_in.go",
+    "file_name": "baked_in.go",
+    "is_test_file": false,
+    "functions": [
+      "isLteField",
+      "isEmail",
+      "isCIDRv6",
+      "isUDPAddrResolvable",
+      "isLatitude",
+      "isFQDN",
+      "isIso3166Alpha2EU",
+      "isDefault",
+      "isAlphanumUnicode",
+      "isBoolean",
+      "isURL",
+      "isSemverFormat",
+      "hasMultiByteCharacter",
+      "isSHA512",
+      "isIPv6",
+      "isHostnameRFC1123",
+      "excludesRune",
+      "isDirPath",
+      "isE164",
+      "isIso3166AlphaNumeric",
+      "isNeField",
+      "isGt",
+      "hasValue",
+      "isBCP47StrictLanguageTag",
+      "isCMYK",
+      "isLongitude",
+      "isHttpsURL",
+      "isLtCrossStructField",
+      "isTIGER192",
+      "isFilePath",
+      "hasMinOf",
+      "isNumber",
+      "isUnixDomainSocketExists",
+      "skipUnless",
+      "detectFileMIMEType",
+      "fieldContains",
+      "isNeCrossStructField",
+      "isNumeric",
+      "isIso31662",
+      "excludesAll",
+      "isIso3166Alpha3EU",
+      "isBCP47LanguageTag",
+      "isISBN13",
+      "isAlphanum",
+      "requiredWith",
+      "requiredUnless",
+      "isAlphaNumericSpace",
+      "isLtField",
+      "isMIMEType",
+      "isCveFormat",
+      "isUrnRFC2141",
+      "isURI",
+      "matchesMIMEType",
+      "isPostcodeByIso3166Alpha2",
+      "isGte",
+      "isGteField",
+      "isBitcoinAddress",
+      "startsWith",
+      "requiredWithAll",
+      "isTimeZone",
+      "isGteCrossStructField",
+      "excludedIf",
+      "isLte",
+      "isNoneOfCI",
+      "isIP6AddrResolvable",
+      "isSHA384",
+      "isIPv4",
+      "requiredIf",
+      "isBase64URL",
+      "excludedWithoutAll",
+      "excludedWithout",
+      "isHttpURL",
+      "isRIPEMD160",
+      "isEthereumAddress",
+      "hasLuhnChecksum",
+      "isIsoBic2014Format",
+      "isUUID5",
+      "isLt",
+      "isEqIgnoreCase",
+      "isPrintableASCII",
+      "isDatetime",
+      "isHEXColor",
+      "isTIGER128",
+      "isIP",
+      "containsAny",
+      "isCron",
+      "requireCheckFieldKind",
+      "isIP4AddrResolvable",
+      "isMAC",
+      "isOrigin",
+      "fieldExcludes",
+      "isHSL",
+      "isNeIgnoreCase",
+      "isCreditCard",
+      "isIPAddrResolvable",
+      "isEIN",
+      "isBitcoinBech32Address",
+      "isIso4217",
+      "isTCP4AddrResolvable",
+      "isSHA256",
+      "isIso3166AlphaNumericEU",
+      "isImage",
+      "isIso3166Alpha2",
+      "isGtCrossStructField",
+      "requiredWithoutAll",
+      "isSpiceDB",
+      "isCIDRv4",
+      "isLowercase",
+      "isDnsRFC1035LabelFormat",
+      "isHexadecimal",
+      "isRIPEMD128",
+      "isAlphaSpace",
+      "isMongoDBObjectId",
+      "isTIGER160",
+      "isEqField",
+      "isGtField",
+      "wrapFunc",
+      "isBase64",
+      "isUUID4RFC4122",
+      "isSSN",
+      "endsNotWith",
+      "isEqCrossStructField",
+      "containsRune",
+      "isUUID3RFC4122",
+      "isIsoBic2022Format",
+      "isJSON",
+      "isDataURI",
+      "isMD5",
+      "isAlpha",
+      "isRGB",
+      "isUUIDRFC4122",
+      "isLteCrossStructField",
+      "isOneOfCI",
+      "contains",
+      "isNoneOf",
+      "excludes",
+      "isURLEncoded",
+      "isUDP6AddrResolvable",
+      "isIP6Addr",
+      "isHostnameRFC952",
+      "isBase64RawURL",
+      "isISSN",
+      "isAlphaUnicode",
+      "isPostcodeByIso3166Alpha2Field",
+      "isIso3166Alpha3",
+      "hasNotZeroValue",
+      "isIP4Addr",
+      "isHostnamePort",
+      "isEthereumAddressChecksum",
+      "isUUID5RFC4122",
+      "requireCheckFieldValue",
+      "isUnixAddrResolvable",
+      "isOneOf",
+      "isULID",
+      "isIso4217Numeric",
+      "startsNotWith",
+      "excludedUnless",
+      "isTCP6AddrResolvable",
+      "isPort",
+      "isRGBA",
+      "isUnique",
+      "hasMaxOf",
+      "isUUID",
+      "isJWT",
+      "isMongoDBConnectionString",
+      "isBase32",
+      "parseOneOfParam2",
+      "isUppercase",
+      "isAbstractSocketExists",
+      "hasLengthOf",
+      "isEq",
+      "isMD4",
+      "isCIDR",
+      "endsWith",
+      "isTCPAddrResolvable",
+      "isDir",
+      "isISBN",
+      "isHTMLEncoded",
+      "isISBN10",
+      "excludedWith",
+      "requiredWithout",
+      "isHSLA",
+      "isUUID3",
+      "isNe",
+      "digitsHaveLuhnChecksum",
+      "isUDP4AddrResolvable",
+      "isUUID4",
+      "isASCII",
+      "excludedWithAll",
+      "isHTML",
+      "isFile"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\benchmarks_test.go",
+    "file_name": "benchmarks_test.go",
+    "is_test_file": true,
+    "functions": [
+      "BenchmarkFieldSuccessParallel",
+      "BenchmarkFieldMapDiveSuccessParallel",
+      "BenchmarkValidateFnParallel",
+      "BenchmarkFieldMapDiveWithKeysSuccess",
+      "BenchmarkFieldMapDiveWithKeysSuccessParallel",
+      "BenchmarkFieldMapDiveWithKeysFailure",
+      "BenchmarkFieldOrTagSuccess",
+      "BenchmarkStructLevelValidationSuccess",
+      "BenchmarkOneof",
+      "BenchmarkStructSimpleCrossFieldSuccess",
+      "BenchmarkStructSimpleSuccess",
+      "BenchmarkStructSimpleFailure",
+      "BenchmarkStructSimpleCrossStructCrossFieldFailureParallel",
+      "BenchmarkNoneOf",
+      "BenchmarkStructSimpleCrossFieldSuccessParallel",
+      "BenchmarkStructComplexSuccessParallel",
+      "BenchmarkFieldSuccess",
+      "BenchmarkStructSimpleSuccessParallel",
+      "BenchmarkNoneOfParallel",
+      "BenchmarkStructSimpleCrossFieldFailure",
+      "BenchmarkStructComplexFailureParallel",
+      "Validate",
+      "BenchmarkStructFilteredFailureParallel",
+      "BenchmarkStructComplexSuccess",
+      "BenchmarkFieldArrayDiveSuccessParallel",
+      "BenchmarkFieldMapDiveWithKeysFailureParallel",
+      "BenchmarkStructLevelValidationFailureParallel",
+      "BenchmarkFieldMapDiveFailureParallel",
+      "BenchmarkStructSimpleCrossStructCrossFieldFailure",
+      "BenchmarkValidateFnSequential",
+      "BenchmarkStructPartialFailure",
+      "BenchmarkStructLevelValidationFailure",
+      "BenchmarkFieldCustomTypeSuccessParallel",
+      "BenchmarkStructExceptFailureParallel",
+      "BenchmarkStructComplexFailure",
+      "BenchmarkFieldCustomTypeSuccess",
+      "BenchmarkStructFilteredSuccessParallel",
+      "BenchmarkStructFilteredSuccess",
+      "BenchmarkStructExceptSuccess",
+      "BenchmarkOneofParallel",
+      "BenchmarkStructSimpleCrossStructCrossFieldSuccess",
+      "BenchmarkStructLevelValidationSuccessParallel",
+      "BenchmarkStructExceptSuccessParallel",
+      "BenchmarkStructSimpleCrossFieldFailureParallel",
+      "BenchmarkFieldCustomTypeFailureParallel",
+      "BenchmarkFieldMapDiveSuccess",
+      "BenchmarkStructSimpleCrossStructCrossFieldSuccessParallel",
+      "BenchmarkStructSimpleFailureParallel",
+      "BenchmarkStructPartialSuccess",
+      "BenchmarkFieldMapDiveFailure",
+      "BenchmarkStructSimpleCustomTypeSuccessParallel",
+      "BenchmarkStructFilteredFailure",
+      "BenchmarkFieldOrTagFailureParallel",
+      "BenchmarkFieldFailureParallel",
+      "BenchmarkFieldArrayDiveSuccess",
+      "BenchmarkFieldFailure",
+      "BenchmarkFieldOrTagSuccessParallel",
+      "BenchmarkFieldCustomTypeFailure",
+      "BenchmarkStructPartialFailureParallel",
+      "BenchmarkFieldArrayDiveFailureParallel",
+      "BenchmarkStructPartialSuccessParallel",
+      "BenchmarkStructExceptFailure",
+      "BenchmarkStructSimpleCustomTypeFailureParallel",
+      "BenchmarkFieldOrTagFailure",
+      "BenchmarkFieldArrayDiveFailure",
+      "BenchmarkStructSimpleCustomTypeSuccess",
+      "BenchmarkStructSimpleCustomTypeFailure"
+    ],
+    "types": [
+      "TestOneof",
+      "Outer",
+      "Inner",
+      "Test",
+      "TestNoneOf",
+      "T",
+      "Foo"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\cache.go",
+    "file_name": "cache.go",
+    "is_test_file": false,
+    "functions": [
+      "parseFieldTagsRecursive",
+      "Get",
+      "Set",
+      "extractStructCache",
+      "fetchCacheTag"
+    ],
+    "types": [
+      "structCache",
+      "cStruct",
+      "tagCache",
+      "cField",
+      "cTag"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\country_codes.go",
+    "file_name": "country_codes.go",
+    "is_test_file": false,
+    "functions": [],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\currency_codes.go",
+    "file_name": "currency_codes.go",
+    "is_test_file": false,
+    "functions": [],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\doc.go",
+    "file_name": "doc.go",
+    "is_test_file": false,
+    "functions": [
+      "customFunc",
+      "ValidatorValue"
+    ],
+    "types": [
+      "Config",
+      "Record",
+      "Outer",
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\errors.go",
+    "file_name": "errors.go",
+    "is_test_file": false,
+    "functions": [
+      "Tag",
+      "Translate",
+      "Error",
+      "StructField",
+      "Kind",
+      "Value",
+      "Namespace",
+      "Type",
+      "Field",
+      "StructNamespace",
+      "ActualTag",
+      "Param"
+    ],
+    "types": [
+      "FieldError",
+      "InvalidValidationError",
+      "fieldError"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\field_level.go",
+    "file_name": "field_level.go",
+    "is_test_file": false,
+    "functions": [
+      "GetStructFieldOKAdvanced2",
+      "FieldName",
+      "GetTag",
+      "GetStructFieldOKAdvanced",
+      "Field",
+      "GetStructFieldOK2",
+      "GetStructFieldOK",
+      "Param",
+      "StructFieldName"
+    ],
+    "types": [
+      "FieldLevel"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\language_codes.go",
+    "file_name": "language_codes.go",
+    "is_test_file": false,
+    "functions": [],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\no_validate_fn.go",
+    "file_name": "no_validate_fn.go",
+    "is_test_file": false,
+    "functions": [
+      "tryCallValidateFn",
+      "isValidateFn"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\options.go",
+    "file_name": "options.go",
+    "is_test_file": false,
+    "functions": [
+      "WithPrivateFieldValidation",
+      "WithRequiredStructEnabled",
+      "WithTagNameFuncBlankOmit"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\postcode_regexes.go",
+    "file_name": "postcode_regexes.go",
+    "is_test_file": false,
+    "functions": [
+      "initPostcodes"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\regexes.go",
+    "file_name": "regexes.go",
+    "is_test_file": false,
+    "functions": [
+      "lazyRegexCompile"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\struct_level.go",
+    "file_name": "struct_level.go",
+    "is_test_file": false,
+    "functions": [
+      "ExtractType",
+      "wrapStructLevelFunc",
+      "ReportError",
+      "Validator",
+      "Current",
+      "Top",
+      "Parent",
+      "ReportValidationErrors"
+    ],
+    "types": [
+      "StructLevel"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations.go",
+    "file_name": "translations.go",
+    "is_test_file": false,
+    "functions": [],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\util.go",
+    "file_name": "util.go",
+    "is_test_file": false,
+    "functions": [
+      "asBool",
+      "panicIf",
+      "fieldMatchesRegexByStringerValOrString",
+      "asFloat64",
+      "asIntFromType",
+      "asFloat32",
+      "extractTypeInternal",
+      "asUint",
+      "asInt",
+      "getStructFieldOKInternal",
+      "asIntFromTimeDuration"
+    ],
+    "types": [
+      "Valuer"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\validate_fn.go",
+    "file_name": "validate_fn.go",
+    "is_test_file": false,
+    "functions": [
+      "isValidateFn"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\validator.go",
+    "file_name": "validator.go",
+    "is_test_file": false,
+    "functions": [
+      "getValue",
+      "traverseField",
+      "validateStruct",
+      "appendAltName"
+    ],
+    "types": [
+      "validate"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\validator_instance.go",
+    "file_name": "validator_instance.go",
+    "is_test_file": false,
+    "functions": [
+      "StructExceptCtx",
+      "ValidateMap",
+      "registerValidation",
+      "VarCtx",
+      "RegisterTranslation",
+      "New",
+      "StructPartial",
+      "StructExcept",
+      "ValidateMapCtx",
+      "RegisterValidation",
+      "Var",
+      "StructFiltered",
+      "StructPartialCtx",
+      "StructCtx",
+      "VarWithKey",
+      "RegisterTagNameFunc",
+      "SetTagName",
+      "VarWithKeyCtx",
+      "RegisterStructValidationCtx",
+      "VarWithValueCtx",
+      "RegisterCustomTypeFunc",
+      "RegisterStructValidationMapRules",
+      "StructFilteredCtx",
+      "VarWithValue",
+      "RegisterStructValidation",
+      "Struct",
+      "RegisterAlias",
+      "RegisterValidationCtx"
+    ],
+    "types": [
+      "Validate",
+      "internalValidationFuncWrapper"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\validator_test.go",
+    "file_name": "validator_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestIsGt",
+      "TestExcludesRuneValidation",
+      "TestHexadecimal",
+      "TestInvalidStruct",
+      "StructValidationTestStructInvalid",
+      "TestRequiredIfWithNilBytesSlice",
+      "TestPrintableASCIIValidation",
+      "StructValidationTestStructReturnValidationErrors2",
+      "TestValidate_VarWithKeyCtx",
+      "TestAlpha",
+      "TestIsIso3166AlphaNumericValidation",
+      "TestCrossStructLtFieldValidation",
+      "TestASCIIValidation",
+      "TestValidateStructRegisterCtx",
+      "TestBadParams",
+      "TestKeys",
+      "stringPtr",
+      "TestFQDNValidation",
+      "TestStructLevelReturnValidationErrorsWithJSON",
+      "TestIPAddrValidation",
+      "TestArrayStructNamespace",
+      "TestIsDefault",
+      "TestIsEqValidation",
+      "TestMinValidation",
+      "TestUnexposedStruct",
+      "TestHttpsUrl",
+      "TestOmitNilAndRequired",
+      "TestFilePathValidation",
+      "TestSpiceDBValueFormatValidation",
+      "TestHsl",
+      "TestTimeRequired",
+      "TestStructLevelReturnValidationErrors",
+      "TestStructStringValidation",
+      "TestIsIso3166Alpha3Validation",
+      "TestFieldContains",
+      "TestUUIDValidation",
+      "TestRequiredWithout",
+      "OverrideIntTypeForSomeReason",
+      "TestStructPartial",
+      "TestPostCodeByIso3166Alpha2Field",
+      "TestLtField",
+      "TestUDPAddrValidation",
+      "TestUUID3RFC4122Validation",
+      "TestRequiredWithoutAllPointers",
+      "TestSliceMapArrayChanFuncPtrInterfaceRequiredValidation",
+      "TestNoneOfCIValidation",
+      "TestUrl",
+      "TestMinMaxValidation",
+      "TestURLEncodedValidation",
+      "TestHttpUrl",
+      "TestThreeLevelNestedStructs",
+      "TestValidate_ValidateMapCtx",
+      "TestRequiredIfWithMaps",
+      "TestDatePtrValidationIssueValidation",
+      "TestOmitZero",
+      "TestIsIso3166Alpha2EUValidation",
+      "TestMongoDBObjectIDFormatValidation",
+      "TestPostCodeByIso3166Alpha2Field_InvalidKind",
+      "TestPointerAndOmitEmpty",
+      "TestKeyOrs",
+      "TestUUID4Validation",
+      "TestHexColor",
+      "TestMapSliceValueNoFallback",
+      "TestRequiredWith",
+      "TestIsEqFieldValidationWithAliasTime",
+      "TestBitcoinAddressValidation",
+      "TestRequiredIfDuplicateParams",
+      "ValidateCustomType",
+      "TestUri",
+      "TestHTMLEncodedValidation",
+      "TestUDP4AddrValidation",
+      "TestMIMETypeValidation",
+      "TestStructOnlyValidation",
+      "TestMapStructFallbackWithKeysOnly",
+      "TestCreditCardFormatValidation",
+      "TestFileValidation",
+      "TestSHA256Validation",
+      "TestHTMLValidation",
+      "TestCrossStructNeFieldValidation",
+      "TestPostCodeByIso3166Alpha2",
+      "TestGtField",
+      "TestEUCountryCodeValidation",
+      "TestISBN10Validation",
+      "TestSHA384Validation",
+      "TestEmail",
+      "TestEndsWithValidation",
+      "TestMongoDBConnectionStringFormatValidation",
+      "TestCronExpressionValidation",
+      "TestCmyk",
+      "TestBicIso2022FormatValidation",
+      "TestGetTag",
+      "TestRequiredIfWithArrays",
+      "AssertDeepError",
+      "TestMapEmptyPointerStructValueNoError",
+      "TestLuhnChecksumValidation",
+      "TestNumber",
+      "TestStructFiltered",
+      "TestIsNeIgnoreCaseValidation",
+      "IsNotRed",
+      "TestInvalidValidatorFunction",
+      "TestIP6AddrValidation",
+      "TestExcludedIf",
+      "TestMD4Validation",
+      "TestOrigin",
+      "TestUniqueValidationNilPtrSlice",
+      "Test_port_validator",
+      "TestTranslations",
+      "TestAliasWithOrOperator",
+      "TestTIGER192Validation",
+      "TestMultipleRecursiveExtractStructCache",
+      "TestFieldExcludes",
+      "TestDirPathValidation",
+      "StructValidationTestStructReturnValidationErrors",
+      "TestStructUint64Validation",
+      "TestStructLevelValidationsPointerPassing",
+      "TestMapEmptyValueMap",
+      "TestLenValidation",
+      "TestUppercaseValidation",
+      "TestExcludesAllValidation",
+      "TestFieldLevelName",
+      "TestAliasTags",
+      "TestValidateByTagAndValue",
+      "TestAnonymous",
+      "TestIsLt",
+      "TestLteField",
+      "TestDirValidation",
+      "TestUniqueValidationStructSlice",
+      "TestSHA512Validation",
+      "TestPostCodeByIso3166Alpha2Field_WrongField",
+      "TestRequiredWithoutPointers",
+      "TestExcludedWithoutAll",
+      "TestMapStructWithKeyValidationOnly",
+      "TestIsNeValidation",
+      "TestSQLValue2Validation",
+      "TestCommaAndPipeObfuscationValidation",
+      "TestCveFormatValidation",
+      "TestBase32Validation",
+      "TestIsLte",
+      "TestRIPEMD160Validation",
+      "TestTCPAddrValidation",
+      "TestCountryCodeValidation",
+      "TestMultiOrOperatorGroup",
+      "TestHostnameRFC1123Validation",
+      "TestContainsAnyValidation",
+      "TestArrayDiveValidation",
+      "TestContainsValidation",
+      "TestMapPointerStructWithNilValue",
+      "TestLookup",
+      "TestOneOfCIValidation",
+      "TestHostnameRFC1123AliasValidation",
+      "TestSSNValidation",
+      "TestIsNeFieldValidation",
+      "TestEthereumAddressValidation",
+      "TestOmitZeroWithSlices",
+      "TestStructLevelValidations",
+      "TestIsEqIgnoreCaseValidation",
+      "TestAddFunctions",
+      "TestKeysCustomValidation",
+      "DoNothing",
+      "TestValidate_ValidateMapCtxWithKeys",
+      "TestIsIso3166AlphaNumericEUValidation",
+      "StructValidationTestStruct",
+      "TestInterfaceErrValidation",
+      "TestLatitudeValidation",
+      "TestUUID5Validation",
+      "TestPostCodeByIso3166Alpha2Field_MissingParam",
+      "TestSemverFormatValidation",
+      "TestValuerInterface",
+      "TestMapStructNamespace",
+      "TestBase64RawURLValidation",
+      "Test_hostnameport_validator",
+      "TestAlphaNumeric",
+      "TestTranslationErrors",
+      "TestLowercaseValidation",
+      "Validate",
+      "TestValidateFn",
+      "TestBoolean",
+      "TestJWTValidation",
+      "TestNilStructPointerValidation",
+      "TestLongitudeValidation",
+      "TestMaxValidation",
+      "TestUniqueValidationStructPtrSlice",
+      "TestStructSliceValidation",
+      "Foo",
+      "TestULIDValidation",
+      "TestSQLValueValidation",
+      "TestBase64Validation",
+      "TestMapPointerStructFallback",
+      "TestImageValidation",
+      "TestDurationType",
+      "TestContainsRuneValidation",
+      "TestBitcoinBech32AddressValidation",
+      "TestStructLevelInvalidError",
+      "float64Ptr",
+      "TestMapNestedEmptyStructs",
+      "TestBCP47StrictLanguageTagValidation",
+      "TestCIDRv4Validation",
+      "TestEINStringValidation",
+      "TestExcludesValidation",
+      "TestExcludedUnless",
+      "StructLevelInvalidError",
+      "TestAnonymousSameStructDifferentTags",
+      "TestTIGER128Validation",
+      "AssertError",
+      "TestNameNamespace",
+      "TestCrossStructGteFieldValidation",
+      "TestNumeric",
+      "TestNoStructLevelValidation",
+      "TestBlankTagNameFuncOmitsNamespace",
+      "TestIsIso31662Validation",
+      "TestUUID3Validation",
+      "TestMapStructBasicValidation",
+      "TestISBN13Validation",
+      "TestValidateMapWithCrossFieldValidators",
+      "TestUnixDomainSocketExistsValidation",
+      "TestIPValidation",
+      "getError",
+      "TestIsIso4217Validation",
+      "TestBCP47LanguageTagValidation",
+      "TestIP4AddrValidation",
+      "TestHsla",
+      "TestCrossStructEqFieldValidation",
+      "ValidateValuerType",
+      "TestTimeZoneValidation",
+      "TestNilValidator",
+      "TestNoneOfValidation",
+      "TestAlphaUnicodeValidation",
+      "TestNestedStructValidation",
+      "TestExcludedWith",
+      "intPtr",
+      "TestUUID5RFC4122Validation",
+      "StructValidationNoTestStructCustomName",
+      "TestIsIso4217NumericValidation",
+      "TestDatetimeValidation",
+      "TestRequiredPtr",
+      "TestBoolEqual",
+      "TestStructFloat64Validation",
+      "TestValidate_VarWithKey",
+      "TestCrossNamespaceFieldValidation",
+      "TestBase64URLValidation",
+      "TestTCP4AddrValidation",
+      "TestRequired",
+      "TestOmitZeroWithMaps",
+      "TestCrossStructLteFieldValidation",
+      "TestLength",
+      "TestRIPEMD128Validation",
+      "TestMD5Validation",
+      "TestTCP6AddrValidation",
+      "TestUDP6AddrValidation",
+      "TestISSNValidation",
+      "TestUniqueValidation",
+      "TestIPv4Validation",
+      "TestExcludedWithout",
+      "TestIsIso3166Alpha3EUValidation",
+      "TestRgba",
+      "TestE164",
+      "TestUrnRFC2141",
+      "TestAlphaSpace",
+      "TestMapDiveValidation",
+      "TestMACValidation",
+      "TestUUIDRFC4122Validation",
+      "String",
+      "TestStartsWithValidation",
+      "Value",
+      "TestEthereumAddressChecksumValidation",
+      "TestMapStructPointerValidation",
+      "TestCIDRValidation",
+      "TestHostnameRFC952Validation",
+      "TestMapNonStructValueSkipsFallback",
+      "TestPrivateFieldsStruct",
+      "TestSkipUnless",
+      "TestStructInt32Validation",
+      "TestMapEmptyStructValueNoError",
+      "TestExistsValidation",
+      "TestAlphanumericUnicodeValidation",
+      "TestBicIso2014FormatValidation",
+      "TestIsEqFieldValidation",
+      "TestContainsAndExcludes",
+      "TestGteField",
+      "TestRgb",
+      "TestCustomFieldName",
+      "TestAbilityToValidateNils",
+      "TestRequiredWithoutAll",
+      "TestOneOfValidation",
+      "TestBadKeyValidation",
+      "TestTIGER160Validation",
+      "TestChangeTag",
+      "TestDataURIValidation",
+      "TestRequiredIf",
+      "TestJSONValidation",
+      "TestRequiredWithAll",
+      "TestExcludedWithAll",
+      "TestIsIso3166Alpha2Validation",
+      "TestMapStructWithKeyAndValueValidation",
+      "TestMultibyteValidation",
+      "TestUnixAddrValidation",
+      "ValidatorValue",
+      "TestRFC1035LabelFormatValidation",
+      "TestOrTag",
+      "TestIsGte",
+      "StructValidationTestStructSuccess",
+      "TestCrossStructGtFieldValidation",
+      "TestUUID4RFC4122Validation",
+      "TestAlphaNumericSpace",
+      "TestCIDRv6Validation",
+      "TestIPv6Validation",
+      "TestISBNValidation",
+      "TestRequiredUnless"
+    ],
+    "types": [
+      "S",
+      "DuplicateStruct",
+      "I",
+      "TimeTest",
+      "Inner4",
+      "Thing",
+      "tc",
+      "TestIface",
+      "TestStructReturnValidationErrorsInner2",
+      "UIntTest",
+      "TestMapStruct",
+      "TestMultiDimensionalStructsPtr",
+      "TextOrBytes",
+      "InvalidValuePanicSafetyTest",
+      "Lookup",
+      "TextOrArray",
+      "FloatTest",
+      "nested",
+      "TestMultiDimensionalStructsPtr3",
+      "Inner2",
+      "Other",
+      "Address",
+      "TestUint64",
+      "TestString",
+      "valuer",
+      "TestSlice",
+      "TestMapInterface",
+      "TestMapTimeStruct",
+      "Test4",
+      "OmitZeroExample",
+      "Test2",
+      "SInner",
+      "Test3",
+      "MyStruct",
+      "StringTestMissingField",
+      "Level2",
+      "StructLevelInvalidErr",
+      "TestMultiDimensionalStructs",
+      "SliceStruct",
+      "Inner",
+      "testInput",
+      "TimeDurationOmitemptyTest",
+      "is",
+      "TextOrSmallArray",
+      "Colors",
+      "TestInterface",
+      "Namespace",
+      "Level3",
+      "TestMultiDimensionalTimeTime2",
+      "User",
+      "MadeUpCustomType",
+      "TimeTest2",
+      "Parent",
+      "TestMapStructPtr2",
+      "SubTest",
+      "Recursive",
+      "ImpossibleStringTest",
+      "NotRed",
+      "ExternalCMD",
+      "TestPartial",
+      "MapDiveJSONTest",
+      "Outer2",
+      "Inner1Namespace",
+      "Outer",
+      "TestMultiDimensionalStructsPtr2",
+      "IntTest",
+      "Outer4",
+      "child",
+      "StringTest",
+      "TestStruct",
+      "Host",
+      "CustomMadeUpStruct",
+      "OmitEmptyExample",
+      "TestInt32",
+      "topLevel",
+      "TimeDurationInner",
+      "TestMapStructPtr",
+      "Test",
+      "TestTime",
+      "Impl",
+      "TestFloat64",
+      "test",
+      "BadDive",
+      "Inner2Namespace",
+      "TimeDurationTest",
+      "TStruct",
+      "TestMultiDimensional",
+      "uuidTestType",
+      "TestStructReturnValidationErrorsInner1",
+      "Outer3",
+      "A",
+      "TestMultiDimensionalTimeTime",
+      "Inner3",
+      "Level1",
+      "ExternalCMD2",
+      "TextOrMap",
+      "args",
+      "TestStructReturnValidationErrors"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\non-standard\\validators\\notblank.go",
+    "file_name": "notblank.go",
+    "is_test_file": false,
+    "functions": [
+      "NotBlank"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\non-standard\\validators\\notblank_test.go",
+    "file_name": "notblank_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestNotBlank"
+    ],
+    "types": [
+      "test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\testdata\\a.go",
+    "file_name": "a.go",
+    "is_test_file": false,
+    "functions": [],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ar\\ar.go",
+    "file_name": "ar.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ar\\ar_test.go",
+    "file_name": "ar_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\de\\de.go",
+    "file_name": "de.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\de\\de_test.go",
+    "file_name": "de_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\en\\en.go",
+    "file_name": "en.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\en\\en_test.go",
+    "file_name": "en_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations",
+      "IsBar"
+    ],
+    "types": [
+      "Inner",
+      "Test",
+      "Foo"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\es\\es.go",
+    "file_name": "es.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\es\\es_test.go",
+    "file_name": "es_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\fa\\fa.go",
+    "file_name": "fa.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\fa\\fa_test.go",
+    "file_name": "fa_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\fr\\fr.go",
+    "file_name": "fr.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\fr\\fr_test.go",
+    "file_name": "fr_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\id\\id.go",
+    "file_name": "id.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "translateFuncWithParam",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\id\\id_test.go",
+    "file_name": "id_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestComparisonTagsTranslations",
+      "TestNetworkTagsTranslations",
+      "TestStringTagsTranslations",
+      "TestFieldTagsTranslations",
+      "TestOtherTagsTranslations",
+      "InitValidator",
+      "TestAliasesTagsTranslations",
+      "TestFormatTagsTranslations"
+    ],
+    "types": [
+      "TestAliasTags",
+      "TestOtherTags",
+      "TestNetworkTags",
+      "TestFormatTags",
+      "TestStringTags",
+      "TestComparisonTags",
+      "Inner",
+      "TestFieldTags"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\it\\it.go",
+    "file_name": "it.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "customTransFuncV1",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\it\\it_test.go",
+    "file_name": "it_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ja\\ja.go",
+    "file_name": "ja.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ja\\ja_test.go",
+    "file_name": "ja_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ko\\ko.go",
+    "file_name": "ko.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ko\\ko_test.go",
+    "file_name": "ko_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\lv\\lv.go",
+    "file_name": "lv.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\lv\\lv_test.go",
+    "file_name": "lv_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\nl\\nl.go",
+    "file_name": "nl.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\nl\\nl_test.go",
+    "file_name": "nl_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pl\\pl.go",
+    "file_name": "pl.go",
+    "is_test_file": false,
+    "functions": [
+      "registrationFunc",
+      "registerCardinals",
+      "RegisterDefaultTranslations",
+      "translateFunc",
+      "translateFuncWithParam"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pl\\pl_test.go",
+    "file_name": "pl_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pt\\pt.go",
+    "file_name": "pt.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pt\\pt_test.go",
+    "file_name": "pt_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pt_BR\\pt_BR.go",
+    "file_name": "pt_BR.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\pt_BR\\pt_BR_test.go",
+    "file_name": "pt_BR_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations",
+      "IsBar"
+    ],
+    "types": [
+      "Inner",
+      "Test",
+      "Foo"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ru\\ru.go",
+    "file_name": "ru.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\ru\\ru_test.go",
+    "file_name": "ru_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\th\\th.go",
+    "file_name": "th.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\th\\th_test.go",
+    "file_name": "th_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\tr\\tr.go",
+    "file_name": "tr.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\tr\\tr_test.go",
+    "file_name": "tr_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\uk\\uk.go",
+    "file_name": "uk.go",
+    "is_test_file": false,
+    "functions": [
+      "registrationFunc",
+      "registerCardinals",
+      "RegisterDefaultTranslations",
+      "translateFunc",
+      "translateFuncWithParam"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\uk\\uk_test.go",
+    "file_name": "uk_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\vi\\vi.go",
+    "file_name": "vi.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\vi\\vi_test.go",
+    "file_name": "vi_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\zh\\zh.go",
+    "file_name": "zh.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\zh\\zh_test.go",
+    "file_name": "zh_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\zh_tw\\zh_tw.go",
+    "file_name": "zh_tw.go",
+    "is_test_file": false,
+    "functions": [
+      "translateFunc",
+      "RegisterDefaultTranslations",
+      "registrationFunc"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\translations\\zh_tw\\zh_tw_test.go",
+    "file_name": "zh_tw_test.go",
+    "is_test_file": true,
+    "functions": [
+      "TestTranslations"
+    ],
+    "types": [
+      "Inner",
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\custom\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "main",
+      "ValidateValuer"
+    ],
+    "types": [
+      "DbBackedUser"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\custom-validation\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "ValidateMyVal",
+      "main"
+    ],
+    "types": [
+      "MyStruct"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\dive\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "val",
+      "main"
+    ],
+    "types": [
+      "Test"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\gin-upgrading-overriding\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "main"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\gin-upgrading-overriding\\v8_to_v9.go",
+    "file_name": "v8_to_v9.go",
+    "is_test_file": false,
+    "functions": [
+      "lazyinit",
+      "kindOfData",
+      "ValidateStruct",
+      "Engine"
+    ],
+    "types": [
+      "defaultValidator"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\http-transalations\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "main"
+    ],
+    "types": [
+      "User"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\map-validation\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "main",
+      "validateMap",
+      "validateNestedMap"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\simple\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "validateVariable",
+      "main",
+      "validateStruct"
+    ],
+    "types": [
+      "Address",
+      "User"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\struct-level\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "UserStructLevelValidation",
+      "main",
+      "String"
+    ],
+    "types": [
+      "Address",
+      "User",
+      "validationError"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\struct-map-rules-validation\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "validateStructNested",
+      "main",
+      "validateStruct"
+    ],
+    "types": [
+      "Data2",
+      "FamilyMembers",
+      "Data",
+      "Details"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\translations\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "translateIndividual",
+      "main",
+      "translateOverride",
+      "translateAll"
+    ],
+    "types": [
+      "Address",
+      "User"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\validate_fn\\enum_enumer.go",
+    "file_name": "enum_enumer.go",
+    "is_test_file": false,
+    "functions": [
+      "String",
+      "IsAEnum",
+      "EnumValues",
+      "_EnumNoOp",
+      "EnumString",
+      "EnumStrings"
+    ],
+    "types": []
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\validate_fn\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "Validate",
+      "main"
+    ],
+    "types": [
+      "Struct"
+    ]
+  },
+  {
+    "file_path": "D:\\agentic_go_fixer\\validator\\_examples\\valuer\\main.go",
+    "file_name": "main.go",
+    "is_test_file": false,
+    "functions": [
+      "main",
+      "ValidatorValue"
+    ],
+    "types": [
+      "Config",
+      "Record"
+    ]
+  }
+]

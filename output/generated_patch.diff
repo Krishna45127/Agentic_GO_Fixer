@@ -1,0 +1,17 @@
+--- a/D:\agentic_go_fixer\validator\validator_instance.go
++++ b/D:\agentic_go_fixer\validator\validator_instance.go
+@@ -46,7 +46,7 @@
+ 	namespaceSeparator    = "."
+ 	leftBracket           = "["
+ 	rightBracket          = "]"
+-	restrictedTagChars    = ".[],|=+()`~!@#$%^&*\\\"/?<>{}"
++	restrictedTagChars    = ".[],=+()`~!@#$%^&*\\\"/?<>{}"
+ 	restrictedAliasErr    = "Alias '%s' either contains restricted characters or is the same as a restricted tag needed for normal operation"
+ 	restrictedTagErr      = "Tag '%s' either contains restricted characters or is the same as a restricted tag needed for normal operation"
+ )
+@@ -755,4 +755,4 @@
+ 	}
+ 	v.validations[tag] = internalValidationFuncWrapper{fn: fn, runValidationOnNil: nilCheckable}
+ 	return nil
+-}
++}
