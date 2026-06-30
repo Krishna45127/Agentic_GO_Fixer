@@ -16,12 +16,12 @@ def get_gemini_client() -> genai.Client:
     Raises ValueError immediately if GOOGLE_API_KEY is not set,
     so misconfiguration surfaces at startup rather than mid-run.
     """
-    api_key = os.environ.get("GOOGLE_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError(
-            "GOOGLE_API_KEY is not set.\n"
+            "GEMINI_API_KEY is not set.\n"
             "Add it to your .env file:\n"
-            "  GOOGLE_API_KEY=your_key_here\n"
+            "  GEMINI_API_KEY=your_key_here\n"
             "Get a free key at https://aistudio.google.com/apikey"
         )
     return genai.Client(api_key=api_key)

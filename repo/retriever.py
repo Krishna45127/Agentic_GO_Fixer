@@ -24,7 +24,7 @@ class CodeRetriever:
     def __init__(self, index_path: str | Path = DEFAULT_INDEX):
         self.index = self._load_index(Path(index_path))
  
-    # ── Index loading ─────────────────────────────────────────────────────────
+    # Index loading and search methods
  
     def _load_index(self, path: Path) -> list[dict]:
         if not path.exists():
@@ -33,8 +33,7 @@ class CodeRetriever:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
  
-    # ── Ranking ───────────────────────────────────────────────────────────────
- 
+    #  Ranking and search methods 
     def rank_candidates(
         self, query_terms: list[str], top_n: int = 5
     ) -> list[dict]:
@@ -114,7 +113,7 @@ class CodeRetriever:
         scored.sort(key=lambda x: x["total_score"], reverse=True)
         return scored[:top_n]
  
-    # ── Legacy search helpers (kept for backwards compatibility) ──────────────
+    # Legacy search helpers (kept for backwards compatibility) 
  
     def search_by_name(self, query: str) -> list[dict]:
         """
@@ -166,7 +165,7 @@ class CodeRetriever:
  
         return results
  
-    # ── File reader ───────────────────────────────────────────────────────────
+    # File reader with optional line numbers for LLM context
  
     def read_file(self, file_path: str, line_numbers: bool = True) -> str:
         """
@@ -187,7 +186,7 @@ class CodeRetriever:
             return f"Error reading '{file_path}': {e}"
  
  
-# ── Quick CLI for testing the retriever independently ─────────────────────────
+# Quick CLI for testing the retriever independently 
  
 if __name__ == "__main__":
     retriever = CodeRetriever()

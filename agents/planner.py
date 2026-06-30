@@ -43,7 +43,7 @@ class PlannerAgent:
         self.retriever = retriever
         self.client = get_gemini_client()
 
-    # ── public ───────────────────────────────────────────────────────────────
+    # public 
 
     def plan_fix(self, issue_text: str) -> dict | str:
         """
@@ -91,43 +91,7 @@ class PlannerAgent:
         print(f"[Planner] Reading  : {target_file}")
         annotated = self.retriever.read_file(target_file, line_numbers=True)
 
-        # ── FIX (was lines 91-93 in original) ────────────────────────────────
-        #
-        # BUG: the original code passed `annotated` to _generate_plan() with
-        # no check at all:
-        #
-        #   annotated = self.retriever.read_file(target_file, line_numbers=True)
-        #   raw       = self.retriever.read_file(target_file, line_numbers=False)
-        #   plan      = self._generate_plan(issue_text, target_file, annotated)
-        #
-        # CodeRetriever.read_file() signals failure by RETURNING an error string
-        # (retriever.py line 179):
-        #
-        #   return f"Error: '{file_path}' does not exist."
-        #
-        # Without a guard, that error string was embedded verbatim inside the
-        # ```go … ``` block sent to Gemini:
-        #
-        #   File: ../validator/baked_in.go
-        #   ```go
-        #   Error: '../validator/baked_in.go' does not exist.
-        #   ```
-        #
-        # Gemini then read the error message and replied "I cannot access the
-        # file content" — the exact symptom that was reported.
-        #
-        # ROOT CAUSE (fixed in analyzer.py):
-        #   analyzer.py stored CWD-relative paths via os.path.join(root, filename).
-        #   Example: when run from AGENTIC_GO_FIXER/ the index stored
-        #   "validator/baked_in.go", but when run from repo/ with the default
-        #   "../validator" it stored "../validator/baked_in.go".  Either way,
-        #   the stored path became stale once main.py ran from a different CWD,
-        #   making os.path.exists() return False.
-        #   Fix in analyzer.py: os.path.abspath(os.path.join(root, filename))
-        #
-        # This guard is defensive programming on top of the root-cause fix: if
-        # read_file ever returns an error for any reason, we abort here with a
-        # clear, actionable message instead of silently corrupting the LLM prompt.
+
         if annotated.startswith("Error:"):
             return (
                 f"[Planner] Cannot read selected file — aborting before LLM call.\n"
@@ -136,7 +100,7 @@ class PlannerAgent:
                 "Fix: re-run  python repo/analyzer.py <repo_path>  to rebuild\n"
                 "the index with absolute paths, then re-run main.py."
             )
-        # ─────────────────────────────────────────────────────────────────────
+    
 
         raw = self.retriever.read_file(target_file, line_numbers=False)
 
@@ -153,7 +117,7 @@ class PlannerAgent:
             "selection_reasoning": selection["reasoning"],
         }
 
-    # ── private helpers ───────────────────────────────────────────────────────
+    # private helpers 
 
     def _extract_keywords(self, issue_text: str) -> list[str]:
         """

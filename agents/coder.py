@@ -12,8 +12,7 @@ class CoderAgent:
         self.client = get_gemini_client()
         _OUTPUT_DIR.mkdir(exist_ok=True)
  
-    # ── public ───────────────────────────────────────────────────────────────
- 
+    # public 
     def apply_fix(
         self,
         issue_text: str,
@@ -43,7 +42,7 @@ class CoderAgent:
  
         return patched, str(patch_path)
  
-    # ── private helpers ───────────────────────────────────────────────────────
+    #  private helpers
  
     def _rewrite_file(self, issue: str, plan: str, original: str) -> str:
         response = call_with_retry(
@@ -73,8 +72,7 @@ class CoderAgent:
         return patch_path
  
  
-# ── module-level helper ───────────────────────────────────────────────────────
- 
+#  module-level helper 
 def _strip_fences(text: str) -> str:
     """Removes markdown code fences from an LLM response."""
     if "```go" in text:

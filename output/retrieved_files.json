@@ -21,10 +21,10 @@
       "file_path": "D:\\agentic_go_fixer\\validator\\validator_instance.go",
       "file_name": "validator_instance.go",
       "is_test_file": false,
-      "total_score": 12.8,
+      "total_score": 12.9,
       "filename_score": 0.0,
       "symbol_score": 7.0,
-      "text_score": 5.8
+      "text_score": 5.9
     },
     {
       "file_path": "D:\\agentic_go_fixer\\validator\\errors.go",
@@ -55,5 +55,5 @@
     }
   ],
   "selected_file": "D:\\agentic_go_fixer\\validator\\validator_instance.go",
-  "selection_reasoning": "The issue describes a problem with how validation tags, specifically involving the OR operator, are processed and result in malformed error messages, pointing to the core validation logic likely found in `validator_instance.go` rather than a test file."
+  "selection_reasoning": "The bug describes an issue with the OR operator producing invalid tag names in validation errors, which points to the core logic for processing validation rules and generating errors, most likely found in 'validator_instance.go', an implementation file."
 }

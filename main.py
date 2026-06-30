@@ -28,16 +28,19 @@ DEFAULT_REPO = "validator"
 DEFAULT_OUTPUT = Path("output")
  
  
-def main() -> None:
+def solve_issue(
+    issue: str,
+    repo: str = DEFAULT_REPO,
+    output: str = str(DEFAULT_OUTPUT)
+):
     load_dotenv()
-    args = _parse_args()
  
-    out_dir = Path(args.output)
+    out_dir = Path(output)
     out_dir.mkdir(parents=True, exist_ok=True)
  
     _banner("Agentic AI Go Fixer")
-    print(f"  Issue  : {args.issue}")
-    print(f"  Repo   : {args.repo}")
+    print(f"  Issue  : {issue}")
+    print(f"  Repo   : {repo}")
     print(f"  Output : {out_dir}/")
  
     # Initialise agents up-front so misconfiguration fails fast
@@ -47,28 +50,26 @@ def main() -> None:
         coder   = CoderAgent()
         pr_gen  = PRGenerator()
     except ValueError as exc:
-        print(f"\n[Error] {exc}")
-        sys.exit(1)
+        raise RuntimeError(str(exc))
  
     # Save the issue text as an artefact
     (out_dir / "issue.md").write_text(
-        f"# Issue\n\n{args.issue}\n", encoding="utf-8"
+        f"# Issue\n\n{issue}\n", encoding="utf-8"
     )
  
-    # ── 1 : Plan ──────────────────────────────────────────────────────────────
+    # 1 : Plan
     _banner("1 — Plan")
-    plan_result = planner.plan_fix(args.issue)
+    plan_result = planner.plan_fix(issue)
  
     if isinstance(plan_result, str):
-        print(f"\n[Error] {plan_result}")
-        sys.exit(1)
+        raise RuntimeError(plan_result)
  
     print(f"\n{plan_result['plan']}")
  
     # Save retrieval metadata — now includes the full candidate shortlist,
     # scores, selected file, and the LLM's selection reasoning.
     _save_json(out_dir / "retrieved_files.json", {
-        "issue":               args.issue,
+        "issue":               issue,
         "keywords":            plan_result.get("keywords", []),
         "candidates":          plan_result.get("candidates", []),
         "selected_file":       plan_result["target_file"],
@@ -81,10 +82,10 @@ def main() -> None:
         encoding="utf-8",
     )
  
-    # ── 2 : Code ──────────────────────────────────────────────────────────────
+    # 2 : Code 
     _banner("2 — Code")
     patched_content, patch_path = coder.apply_fix(
-        issue_text=args.issue,
+        issue_text=issue,
         plan=plan_result["plan"],
         target_file=plan_result["target_file"],
         original_content=plan_result["original_content"],
@@ -99,9 +100,9 @@ def main() -> None:
  
     _copy_if_exists(Path(patch_path), out_dir / "generated_patch.diff")
  
-    # ── 3 : Validate ──────────────────────────────────────────────────────────
+    # 3 : Validate 
     _banner("3 — Validate")
-    runner     = TestRunner(repo_path=args.repo)
+    runner     = TestRunner(repo_path=repo)
     validation = runner.run()
  
     result_label = "ALL PASSED ✓" if validation.all_passed else "CHECKS FAILED ✗"
@@ -124,7 +125,7 @@ def main() -> None:
     # ── 4 : PR Summary ────────────────────────────────────────────────────────
     _banner("4 — PR Summary")
     pr_path = pr_gen.generate(
-        issue_text=args.issue,
+        issue_text=issue,
         plan=plan_result["plan"],
         validation=validation,
     )
@@ -142,8 +143,27 @@ def main() -> None:
             "\n  ⚠  Some checks failed — original file has been restored.\n"
             "  Review output/generated_patch.diff before re-applying the fix."
         )
+
+    return {
+    "selected_file": plan_result["target_file"],
+    "tests_passed": validation.all_passed,
+    "pr_summary": str(pr_path)
+    }
  
- 
+
+def main():
+
+    args = _parse_args()
+
+    result = solve_issue(
+        issue=args.issue,
+        repo=args.repo,
+        output=args.output
+    )
+
+    print(result)
+
+
 # ── helpers ───────────────────────────────────────────────────────────────────
  
 def _save_json(path: Path, data: dict) -> None:

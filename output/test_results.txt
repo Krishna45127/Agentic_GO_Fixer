@@ -1,4 +1,6 @@
-Result: ALL PASSED ✓
+Result: CHECKS FAILED ✗
 
-PASSED  `go vet ./...`
-PASSED  `go test ./...`
+FAILED  `go vet ./...`
+```
+validator_instance.go:1:1: expected 'package', found 'EOF'
+```

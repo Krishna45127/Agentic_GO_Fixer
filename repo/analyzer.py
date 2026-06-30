@@ -46,12 +46,6 @@ def build_index(repo_path: str) -> list[dict]:
             if not filename.endswith(".go"):
                 continue
 
-            # ── FIX (line 42 original) ────────────────────────────────────────
-            # BEFORE: file_path = os.path.join(root, filename)
-            #   → stores "../validator/baked_in.go" (relative to CWD at index time)
-            # AFTER:  os.path.abspath() resolves to the full on-disk path once,
-            #   → stores "/home/user/AGENTIC_GO_FIXER/validator/baked_in.go"
-            #   → os.path.exists() and Path.read_text() work from ANY CWD
             file_path = os.path.abspath(os.path.join(root, filename))
             try:
                 source = Path(file_path).read_text(encoding="utf-8")
